@@ -1,6 +1,9 @@
 import Button from "../components/Button";
 
-export default function TitleCard({Title, paragraph1, paragraph2, buttonClass1, buttonClass2, buttonName1, buttonName2}) {
+export const buttonCount1 = "flex w-1/5 gap-2";
+export const buttonCount2 = "flex w-2/5 gap-2";
+
+export default function TitleCard({Title, paragraph1, paragraph2, buttonClass1, buttonClass2, buttonName1, buttonName2, buttonCount}) {
     return(
         <div className="py-16">
             <div className="flex flex-col items-center justify-center gap-10">
@@ -9,7 +12,7 @@ export default function TitleCard({Title, paragraph1, paragraph2, buttonClass1, 
                     <p>{paragraph1}</p>
                     <p>{paragraph2}</p>
                 </div>
-                <div className="flex w-1/5 gap-2">
+                <div className={buttonCount}>
                     <Button buttonClass={buttonClass1}  buttonName={buttonName1}/>
                     <Button buttonClass={buttonClass2}  buttonName={buttonName2}/>
                 </div>

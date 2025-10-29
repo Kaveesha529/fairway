@@ -1,5 +1,5 @@
 import Sidebar from "../components/Sidebar";
-import TitleCard from "../components/TitleCard";
+import TitleCard, { buttonCount1, buttonCount2 } from "../components/TitleCard";
 import { primaryButton } from "../components/Button";
 import JobCard from "../components/JobCard";
 import RequestCard from "../components/RequestCard";
@@ -11,14 +11,16 @@ export default function JobRequests() {
                 <TitleCard  Title={"Job Requests"}
                     paragraph1={"View and manage all maintenance requests submitted by customers."}
                     buttonClass1={primaryButton}
-                    buttonName1={"+ New Request"}/>
+                    buttonName1={"+ New Request"}
+                    buttonCount={buttonCount1}/>
 
                 <div className="flex flex-row gap-4">
                     <div className="flex-1">
                         <TitleCard  Title={"Filter Requests"}
                             paragraph1={"Select filters to narrow down your request view"}
                             buttonClass1={primaryButton}
-                            buttonName1={"Apply Filters"}/>
+                            buttonName1={"Apply Filters"}
+                            buttonCount={buttonCount1}/>
                     </div>
                     <div className="flex-1 px-20 py-10">
                         <div className="flex flex-col gap-4">

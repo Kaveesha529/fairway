@@ -3,7 +3,7 @@ import MetricCard from "../components/MetricCard";
 import Table from "../components/Table";
 import Sidebar from "../components/Sidebar";
 import { primaryButton, secondaryButton } from "../components/Button";
-import TitleCard from "../components/TitleCard";
+import TitleCard, { buttonCount1, buttonCount2 } from "../components/TitleCard";
 import JobCard from "../components/JobCard";
 
 const Dashboard = () => {
@@ -21,13 +21,15 @@ const Dashboard = () => {
                       paragraph1={"Manage all aspects of your maintenance operations from this central"}
                       paragraph2={"control panel."}
                       buttonClass1={primaryButton}
-                      buttonName1={"Logout"}/>
+                      buttonName1={"Logout"}
+                      buttonCount={buttonCount1}/>
           
           <div>
             <TitleCard  Title={"Key Metrics Overview"}
                       paragraph1={"Monitor the status of your jobs and finances."}
                       buttonClass1={primaryButton}
-                      buttonName1={"View Details"}/>
+                      buttonName1={"View Details"}
+                      buttonCount={buttonCount1}/>
             <div className="px-20 w-full">
               <div className="grid grid-cols-3 gap-6 w-full">
                 {metrics.map((metric, index) => {
@@ -56,7 +58,8 @@ const Dashboard = () => {
                         buttonClass1={secondaryButton}
                         buttonName1={"View Requests"}
                         buttonClass2={primaryButton}
-                        buttonName2={"Add Technician"}/>
+                        buttonName2={"Add Technician"}
+                        buttonCount={buttonCount2}/>
             </div>
             <div className="px-20 py-10 w-full">
               <div className="flex flex-row gap-8">

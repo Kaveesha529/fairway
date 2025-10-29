@@ -1,5 +1,5 @@
 import Sidebar from "../components/Sidebar";
-import TitleCard from "../components/TitleCard";
+import TitleCard, { buttonCount1, buttonCount2 } from "../components/TitleCard";
 import TechnicianProfileCard from "../components/TechnicianProfileCard";
 import Button, { primaryButton, grayButton } from "../components/Button";
 
@@ -10,7 +10,8 @@ export default function Technicians() {
                 <TitleCard  Title={"Manage Your Technicians"}
                     paragraph1={"View and manage technician details, availability and skills."}
                     buttonClass1={primaryButton}
-                    buttonName1={"+ Add New Technician"}/>
+                    buttonName1={"+ Add New Technician"}
+                    buttonCount={buttonCount1}/>
 
                 <div className="flex flex-row gap-4">
                     <div className="flex flex-1 justify-center items-center">
