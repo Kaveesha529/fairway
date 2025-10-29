@@ -3,8 +3,15 @@ import JobCard from "../components/JobCard";
 import Button, { primaryButton, secondaryButton, grayButton } from "../components/Button";
 import TitleCard, { buttonCount1, buttonCount2 } from "../components/TitleCard";
 import ReportCard from "../components/ReportCard";
+import MetricCard from "../components/MetricCard";
 
 export default function Reports() {
+    const metrics = [
+        { title: "Jobs per Month", value: 150, remark: "+5%"},
+        { title: "Total Revenue from External Buildings", value: "LKR 5,000,000", remark: 0},
+        { title: "Avg. Repair Time per Technician", value: "2.5 hours", remark: 0},
+    ];
+
     return(
         <Sidebar children={
             <div className="flex flex-col min-h-screen">
@@ -71,6 +78,34 @@ export default function Reports() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="flex flex-col gap-4 mb-4">
+                    <div className="flex-1">
+                        <TitleCard  Title={"Overview Metrics"}
+                            paragraph1={"Key performance indicators for better understanding."}/>
+                    </div>
+                    <div className="px-20 w-full">
+                                  <div className="grid grid-cols-3 gap-6 w-full">
+                                    {metrics.map((metric, index) => {
+                                      const isLastSingle =
+                                        metrics.length % 3 === 1 && index === metrics.length - 1;
+                    
+                                      return (
+                                        <div
+                                          key={metric.title}
+                                          className={isLastSingle ? "col-span-3" : ""}
+                                        >
+                                          <MetricCard
+                                            title={metric.title}
+                                            value={metric.value}
+                                            remark={metric.remark}
+                                          />
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                </div>
                 </div>
 
                 <div className="flex flex-row gap-4">
