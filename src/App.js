@@ -7,6 +7,7 @@ import Technicians from "./pages/Technicians";
 import Invoices from "./pages/Invoices";
 import Payments from "./pages/Payments";
 import Schedule from "./pages/Schedule";
+import Reports from "./pages/Reports";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/invoices" element={<Invoices />} />
         <Route path="/payments" element={<Payments />} />
         <Route path="/schedule" element={<Schedule />} />
+        <Route path="/reports" element={<Reports />} />
       </Routes>
     </Router>
   );
