@@ -70,14 +70,6 @@ const Dashboard = () => {
               <p>Streamlining your operations with quick access to key metrics</p>
             </div>
           </div>
-          {/* <div className="flex px-60 py-10 w-full">
-            <div className="flex items-center justify-between w-full">
-              <p className="text-black text-lg">© 2025 Fairway Holdings (Pvt) Ltd.</p>
-              <p className="text-black text-lg">Privacy Policy</p>
-              <p className="text-black text-lg">Terms of Service</p>
-              <p className="text-black text-lg">Contact Support</p>
-            </div>
-          </div> */}
         </div>
       }/>
   );
