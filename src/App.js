@@ -8,6 +8,7 @@ import Invoices from "./pages/Invoices";
 import Payments from "./pages/Payments";
 import Schedule from "./pages/Schedule";
 import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/payments" element={<Payments />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/reports" element={<Reports />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>
   );
