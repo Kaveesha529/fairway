@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Button, { primaryButton, secondaryButton } from "../components/Button";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -19,7 +20,7 @@ const LoginPage = () => {
 
   return (
     <div className="flex flex-col w-full items-center justify-center h-screen">
-      <div className="flex bg-white w-full h-full">
+      <div className="flex bg-white w-full h-full mt-16">
         <div className="flex flex-1 items-left justify-center">
           <div className="flex flex-col items-left justify-center gap-4">
             <h1 className="text-4xl font-bold">Admin Login</h1>
@@ -55,18 +56,14 @@ const LoginPage = () => {
                 />
               </div>
               <div className="flex flex-row gap-4 w-full">
-                <button className="flex-1 text-black border border-black p-2 rounded hover:bg-gray-100">
-                  Forgot Password?
-                </button>
-                <button className="flex-1 bg-black text-white p-2 rounded hover:bg-gray-800">
-                  Login
-                </button>
+                <Button buttonClass={secondaryButton}  buttonName={"Forgot Password?"}/>
+                <Button buttonClass={primaryButton}  buttonName={"Login"}/>
               </div>
             </form>
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-start h-[50%]">
+      <div className="flex justify-center items-center h-[33%]">
         <p className="text-black text-lg">© 2025 Fairway Holdings (Pvt) Ltd.</p>
       </div>
     </div>
