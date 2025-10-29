@@ -5,6 +5,8 @@ import Dashboard from "./pages/Dashboard";
 import JobRequests from "./pages/JobRequests";
 import Technicians from "./pages/Technicians";
 import Invoices from "./pages/Invoices";
+import Payments from "./pages/Payments";
+import Schedule from "./pages/Schedule";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/jobRequests" element={<JobRequests />} />
         <Route path="/technicians" element={<Technicians />} />
         <Route path="/invoices" element={<Invoices />} />
+        <Route path="/payments" element={<Payments />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
     </Router>
   );

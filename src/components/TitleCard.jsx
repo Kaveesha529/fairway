@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 
-export const buttonCount1 = "flex w-1/5 gap-2";
-export const buttonCount2 = "flex w-2/5 gap-2";
+export const buttonCount1 = "flex w-1/3 gap-2";
+export const buttonCount2 = "flex w-3/5 gap-2";
 
 export default function TitleCard({Title, paragraph1, paragraph2, buttonClass1, buttonClass2, buttonName1, buttonName2, buttonCount}) {
     return(
